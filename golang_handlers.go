@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"mime/multipart"
-	"strconv"
+	"os"
 	"strings"
 
 	"github.com/gin-gonic/gin"
@@ -23,31 +23,48 @@ func handleGoPush(c *gin.Context) {
 		return
 	}
 
+	metrics := []*PrometheusMetric{}
+
 	gotestFile, ok := form.File["gotest"]
 	if ok {
 		for _, f := range gotestFile {
-			err := parseGoTestFile(f)
+			mm, err := parseGoTestFile(f)
 			if err != nil {
 				c.JSON(400, gin.H{"error": err.Error()})
 				return
 			}
+
+			metrics = append(metrics, mm...)
+		}
+	}
+
+	if os.Getenv("UNBROKEN_PUSH_METRICS") == "true" {
+		grafanaURL := os.Getenv("UNBROKEN_GRAFANA_URL")
+		grafanaKey := os.Getenv("UNBROKEN_GRAFANA_KEY")
+
+		err := PushToGrafana(metrics, grafanaURL, grafanaKey)
+		if err != nil {
+			c.JSON(400, gin.H{"error": err.Error()})
+			return
 		}
 	}
 }
 
-func parseGoTestFile(file *multipart.FileHeader) error {
+func parseGoTestFile(file *multipart.FileHeader) ([]*PrometheusMetric, error) {
 	log.Info("parsing gotest file", zap.Any("file", file.Filename))
 
 	f, err := file.Open()
 	if err != nil {
-		return err
+		return nil, err
 	}
 	defer f.Close()
 
 	bb, err := ioutil.ReadAll(f)
 	if err != nil {
-		return err
+		return nil, err
 	}
+
+	metrics := []*PrometheusMetric{}
 
 	lines := strings.Split(string(bb), "\n")
 	for _, line := range lines {
@@ -55,7 +72,7 @@ func parseGoTestFile(file *multipart.FileHeader) error {
 		err := json.Unmarshal([]byte(line), goTestLine)
 		if err != nil {
 			log.Error("error parsing json", zap.Error(err))
-			return err
+			return nil, err
 		}
 
 		if goTestLine.Action == "pass" || goTestLine.Action == "fail" {
@@ -69,11 +86,35 @@ func parseGoTestFile(file *multipart.FileHeader) error {
 				continue
 			}
 
-			log.Info("test results",
-				zap.String("package", goTestLine.Package),
-				zap.String("test", goTestLine.Test),
-				zap.String("status", goTestLine.Action),
-			)
+			var suite, test string
+			if strings.Contains(goTestLine.Test, "/") {
+				split := strings.Split(goTestLine.Test, "/")
+				if len(split) != 2 {
+					log.Error("error parsing test", zap.Any("line", goTestLine.Test))
+					continue
+				}
+				suite = split[0]
+				test = split[1]
+			} else {
+				suite = ""
+				test = goTestLine.Test
+			}
+
+			// we must convert the test result to an int, as prometheus does not support strings via this method
+			value := "1"
+			if goTestLine.Action == "fail" {
+				value = "0"
+			}
+
+			metrics = append(metrics, &PrometheusMetric{
+				Name:  "go_test",
+				Value: value,
+				Labels: map[string]string{
+					"package": strings.Replace(strings.Replace(goTestLine.Package, "/", "_", -1), ".", "_", -1),
+					"suite":   suite,
+					"test":    test,
+				},
+			})
 		}
 
 		if goTestLine.Action == "output" {
@@ -93,19 +134,23 @@ func parseGoTestFile(file *multipart.FileHeader) error {
 				log.Error("error parsing coverage", zap.Any("line", goTestLine.Output))
 				continue
 			}
+			coverageString := percentSplit[0]
 
-			coverage, err := strconv.ParseFloat(percentSplit[0], 64)
-			if err != nil {
-				log.Error("error parsing coverage", zap.Error(err))
-				continue
-			}
+			// coverage, err := strconv.ParseFloat(coverageString, 64)
+			// if err != nil {
+			// 	log.Error("error parsing coverage", zap.Error(err))
+			// 	continue
+			// }
 
-			log.Info("coverage results",
-				zap.String("package", goTestLine.Package),
-				zap.Float64("coverage", coverage),
-			)
+			metrics = append(metrics, &PrometheusMetric{
+				Name:  "go_coverage",
+				Value: coverageString,
+				Labels: map[string]string{
+					"package": goTestLine.Package,
+				},
+			})
 		}
 	}
 
-	return nil
+	return metrics, nil
 }
