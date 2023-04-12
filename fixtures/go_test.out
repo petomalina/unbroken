@@ -1,92 +1,94 @@
-{"Time":"2023-04-12T17:57:34.373191279Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/api"}
-{"Time":"2023-04-12T17:57:34.374004779Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/api","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/api\t[no test files]\n"}
-{"Time":"2023-04-12T17:57:34.374032478Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/api","Elapsed":0.001}
-{"Time":"2023-04-12T17:57:34.464436299Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http"}
-{"Time":"2023-04-12T17:57:34.464471098Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http\t[no test files]\n"}
-{"Time":"2023-04-12T17:57:34.464485598Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http","Elapsed":0}
-{"Time":"2023-04-12T17:57:34.542906329Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub"}
-{"Time":"2023-04-12T17:57:34.543628328Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http-pubsub\t[no test files]\n"}
-{"Time":"2023-04-12T17:57:34.543660128Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub","Elapsed":0.001}
-{"Time":"2023-04-12T17:57:34.634783548Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server"}
-{"Time":"2023-04-12T17:57:34.634832148Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http-server\t[no test files]\n"}
-{"Time":"2023-04-12T17:57:34.634847648Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.278833178Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer"}
-{"Time":"2023-04-12T17:57:35.278988978Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/pkg/server"}
-{"Time":"2023-04-12T17:57:35.293274665Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite"}
-{"Time":"2023-04-12T17:57:35.293616965Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Output":"=== RUN   TestGrpcHandlerSuite\n"}
-{"Time":"2023-04-12T17:57:35.294889564Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler"}
-{"Time":"2023-04-12T17:57:35.294911864Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Output":"=== RUN   TestGrpcHandlerSuite/TestGrpcHandler\n"}
-{"Time":"2023-04-12T17:57:35.298001161Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite"}
-{"Time":"2023-04-12T17:57:35.298047861Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Output":"=== RUN   TestServerSuite\n"}
-{"Time":"2023-04-12T17:57:35.29968976Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Output":"--- PASS: TestGrpcHandlerSuite (0.01s)\n"}
-{"Time":"2023-04-12T17:57:35.29971416Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Output":"    --- PASS: TestGrpcHandlerSuite/TestGrpcHandler (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.29978016Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.29979566Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Elapsed":0.01}
-{"Time":"2023-04-12T17:57:35.29980886Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite"}
-{"Time":"2023-04-12T17:57:35.29982656Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Output":"=== RUN   TestGRPCTestSuite\n"}
-{"Time":"2023-04-12T17:57:35.300865759Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest"}
-{"Time":"2023-04-12T17:57:35.300886659Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Output":"=== RUN   TestGRPCTestSuite/TestIsGRPCRequest\n"}
-{"Time":"2023-04-12T17:57:35.301025359Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Output":"--- PASS: TestGRPCTestSuite (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.301042759Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Output":"    --- PASS: TestGRPCTestSuite/TestIsGRPCRequest (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.301098059Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.301810058Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.301827658Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite"}
-{"Time":"2023-04-12T17:57:35.301839958Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Output":"=== RUN   TestGRPCWebTextSuite\n"}
-{"Time":"2023-04-12T17:57:35.303104857Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost"}
-{"Time":"2023-04-12T17:57:35.303134157Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Output":"=== RUN   TestServerSuite/TestDefinedPortNoHost\n"}
-{"Time":"2023-04-12T17:57:35.303194157Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector"}
-{"Time":"2023-04-12T17:57:35.303208257Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Output":"=== RUN   TestGRPCWebTextSuite/TestOrSelector\n"}
-{"Time":"2023-04-12T17:57:35.303425057Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Output":"--- PASS: TestGRPCWebTextSuite (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.303450556Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Output":"    --- PASS: TestGRPCWebTextSuite/TestOrSelector (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.303544156Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.303560556Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.303582056Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite"}
-{"Time":"2023-04-12T17:57:35.303594656Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Output":"=== RUN   TestMultiplexerSuite\n"}
-{"Time":"2023-04-12T17:57:35.304489856Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector"}
-{"Time":"2023-04-12T17:57:35.304512856Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Output":"=== RUN   TestMultiplexerSuite/TestOrSelector\n"}
-{"Time":"2023-04-12T17:57:35.304655055Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Output":"--- PASS: TestMultiplexerSuite (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.304672955Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Output":"    --- PASS: TestMultiplexerSuite/TestOrSelector (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.304734555Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.304748155Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.304758355Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite"}
-{"Time":"2023-04-12T17:57:35.304775655Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Output":"=== RUN   TestPubSubHandlerSuite\n"}
-{"Time":"2023-04-12T17:57:35.306127154Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler"}
-{"Time":"2023-04-12T17:57:35.306150754Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Output":"=== RUN   TestPubSubHandlerSuite/TestPubSubHandler\n"}
-{"Time":"2023-04-12T17:57:35.309692751Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Output":"--- PASS: TestPubSubHandlerSuite (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.309742151Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Output":"    --- PASS: TestPubSubHandlerSuite/TestPubSubHandler (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.309758551Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.309771351Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.309782751Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite"}
-{"Time":"2023-04-12T17:57:35.309794151Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Output":"=== RUN   TestPubSubTestSuite\n"}
-{"Time":"2023-04-12T17:57:35.315026846Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined"}
-{"Time":"2023-04-12T17:57:35.315071546Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Output":"=== RUN   TestServerSuite/TestNewDefined\n"}
-{"Time":"2023-04-12T17:57:35.315361946Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom"}
-{"Time":"2023-04-12T17:57:35.315381946Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Output":"=== RUN   TestServerSuite/TestNewRandom\n"}
-{"Time":"2023-04-12T17:57:35.315487646Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort"}
-{"Time":"2023-04-12T17:57:35.315503046Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Output":"=== RUN   TestServerSuite/TestNewWithHostNoPort\n"}
-{"Time":"2023-04-12T17:57:35.315609946Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Output":"--- PASS: TestServerSuite (0.02s)\n"}
-{"Time":"2023-04-12T17:57:35.315629446Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Output":"    --- PASS: TestServerSuite/TestDefinedPortNoHost (0.01s)\n"}
-{"Time":"2023-04-12T17:57:35.315642346Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Elapsed":0.01}
-{"Time":"2023-04-12T17:57:35.315659046Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Output":"    --- PASS: TestServerSuite/TestNewDefined (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.315673546Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.315684146Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Output":"    --- PASS: TestServerSuite/TestNewRandom (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.315696046Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.315706746Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Output":"    --- PASS: TestServerSuite/TestNewWithHostNoPort (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.315721146Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.315731546Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Elapsed":0.02}
-{"Time":"2023-04-12T17:57:35.315743846Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Output":"PASS\n"}
-{"Time":"2023-04-12T17:57:35.316717345Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Output":"ok  \tgithub.com/petomalina/xrpc/v2/pkg/server\t0.037s\n"}
-{"Time":"2023-04-12T17:57:35.317459944Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Elapsed":0.038}
-{"Time":"2023-04-12T17:57:35.319798642Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest"}
-{"Time":"2023-04-12T17:57:35.319816842Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Output":"=== RUN   TestPubSubTestSuite/TestInterceptPubSubRequest\n"}
-{"Time":"2023-04-12T17:57:35.320432641Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest"}
-{"Time":"2023-04-12T17:57:35.320505141Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Output":"=== RUN   TestPubSubTestSuite/TestIsPubSubRequest\n"}
-{"Time":"2023-04-12T17:57:35.320519241Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Output":"--- PASS: TestPubSubTestSuite (0.01s)\n"}
-{"Time":"2023-04-12T17:57:35.320530141Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Output":"    --- PASS: TestPubSubTestSuite/TestInterceptPubSubRequest (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.320542641Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.320552041Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Output":"    --- PASS: TestPubSubTestSuite/TestIsPubSubRequest (0.00s)\n"}
-{"Time":"2023-04-12T17:57:35.320560841Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Elapsed":0}
-{"Time":"2023-04-12T17:57:35.320569541Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Elapsed":0.01}
-{"Time":"2023-04-12T17:57:35.320579041Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Output":"PASS\n"}
-{"Time":"2023-04-12T17:57:35.325417537Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Output":"ok  \tgithub.com/petomalina/xrpc/v2/pkg/multiplexer\t0.046s\n"}
-{"Time":"2023-04-12T17:57:35.326149436Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Elapsed":0.047}
+{"Time":"2023-04-12T20:25:59.633612887Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/api"}
+{"Time":"2023-04-12T20:25:59.634326679Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/api","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/api\t[no test files]\n"}
+{"Time":"2023-04-12T20:25:59.634353579Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/api","Elapsed":0.001}
+{"Time":"2023-04-12T20:25:59.720668882Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http"}
+{"Time":"2023-04-12T20:25:59.720697982Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http\t[no test files]\n"}
+{"Time":"2023-04-12T20:25:59.720710081Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http","Elapsed":0}
+{"Time":"2023-04-12T20:25:59.806865586Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub"}
+{"Time":"2023-04-12T20:25:59.806891886Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http-pubsub\t[no test files]\n"}
+{"Time":"2023-04-12T20:25:59.806905486Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-pubsub","Elapsed":0}
+{"Time":"2023-04-12T20:25:59.939212258Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server"}
+{"Time":"2023-04-12T20:25:59.939243557Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server","Output":"?   \tgithub.com/petomalina/xrpc/v2/examples/grpc-http-server\t[no test files]\n"}
+{"Time":"2023-04-12T20:25:59.939256657Z","Action":"skip","Package":"github.com/petomalina/xrpc/v2/examples/grpc-http-server","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.488451114Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer"}
+{"Time":"2023-04-12T20:26:00.515221704Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite"}
+{"Time":"2023-04-12T20:26:00.515771198Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Output":"=== RUN   TestGrpcHandlerSuite\n"}
+{"Time":"2023-04-12T20:26:00.515796698Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler"}
+{"Time":"2023-04-12T20:26:00.515810098Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Output":"=== RUN   TestGrpcHandlerSuite/TestGrpcHandler\n"}
+{"Time":"2023-04-12T20:26:00.515840197Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Output":"--- PASS: TestGrpcHandlerSuite/TestGrpcHandler (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.515853397Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite/TestGrpcHandler","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.515868897Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Output":"--- PASS: TestGrpcHandlerSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.515880997Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGrpcHandlerSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.515892297Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite"}
+{"Time":"2023-04-12T20:26:00.515910396Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Output":"=== RUN   TestGRPCTestSuite\n"}
+{"Time":"2023-04-12T20:26:00.515925096Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest"}
+{"Time":"2023-04-12T20:26:00.515936196Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Output":"=== RUN   TestGRPCTestSuite/TestIsGRPCRequest\n"}
+{"Time":"2023-04-12T20:26:00.517285381Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Output":"--- PASS: TestGRPCTestSuite/TestIsGRPCRequest (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.521915127Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite/TestIsGRPCRequest","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.52689407Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Output":"--- PASS: TestGRPCTestSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.526912369Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCTestSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.526926369Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite"}
+{"Time":"2023-04-12T20:26:00.526935369Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Output":"=== RUN   TestGRPCWebTextSuite\n"}
+{"Time":"2023-04-12T20:26:00.526944669Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector"}
+{"Time":"2023-04-12T20:26:00.526953269Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Output":"=== RUN   TestGRPCWebTextSuite/TestOrSelector\n"}
+{"Time":"2023-04-12T20:26:00.526964069Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Output":"--- PASS: TestGRPCWebTextSuite/TestOrSelector (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.526973269Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite/TestOrSelector","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.526983869Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Output":"--- PASS: TestGRPCWebTextSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.526992568Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestGRPCWebTextSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527000168Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite"}
+{"Time":"2023-04-12T20:26:00.527008568Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Output":"=== RUN   TestMultiplexerSuite\n"}
+{"Time":"2023-04-12T20:26:00.527017168Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector"}
+{"Time":"2023-04-12T20:26:00.527025168Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Output":"=== RUN   TestMultiplexerSuite/TestOrSelector\n"}
+{"Time":"2023-04-12T20:26:00.527035168Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Output":"--- PASS: TestMultiplexerSuite/TestOrSelector (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527044268Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite/TestOrSelector","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527053868Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Output":"--- PASS: TestMultiplexerSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527062868Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestMultiplexerSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527071368Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite"}
+{"Time":"2023-04-12T20:26:00.527079367Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Output":"=== RUN   TestPubSubHandlerSuite\n"}
+{"Time":"2023-04-12T20:26:00.527085167Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler"}
+{"Time":"2023-04-12T20:26:00.527093067Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Output":"=== RUN   TestPubSubHandlerSuite/TestPubSubHandler\n"}
+{"Time":"2023-04-12T20:26:00.527102867Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Output":"--- PASS: TestPubSubHandlerSuite/TestPubSubHandler (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527112367Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite/TestPubSubHandler","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527121767Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Output":"--- PASS: TestPubSubHandlerSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527130867Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubHandlerSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527139767Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite"}
+{"Time":"2023-04-12T20:26:00.527156867Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Output":"=== RUN   TestPubSubTestSuite\n"}
+{"Time":"2023-04-12T20:26:00.527175066Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest"}
+{"Time":"2023-04-12T20:26:00.527184166Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Output":"=== RUN   TestPubSubTestSuite/TestInterceptPubSubRequest\n"}
+{"Time":"2023-04-12T20:26:00.527194066Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Output":"--- PASS: TestPubSubTestSuite/TestInterceptPubSubRequest (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527203466Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestInterceptPubSubRequest","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527212066Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest"}
+{"Time":"2023-04-12T20:26:00.527220466Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Output":"=== RUN   TestPubSubTestSuite/TestIsPubSubRequest\n"}
+{"Time":"2023-04-12T20:26:00.527230466Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Output":"--- PASS: TestPubSubTestSuite/TestIsPubSubRequest (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527240866Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite/TestIsPubSubRequest","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527253065Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Output":"--- PASS: TestPubSubTestSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.527263465Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Test":"TestPubSubTestSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.527278365Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Output":"PASS\n"}
+{"Time":"2023-04-12T20:26:00.527288165Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Output":"\tgithub.com/petomalina/xrpc/v2/pkg/multiplexer\tcoverage: 71.8% of statements\n"}
+{"Time":"2023-04-12T20:26:00.527381964Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Output":"ok  \tgithub.com/petomalina/xrpc/v2/pkg/multiplexer\t0.038s\tcoverage: 71.8% of statements\n"}
+{"Time":"2023-04-12T20:26:00.528112056Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/multiplexer","Elapsed":0.04}
+{"Time":"2023-04-12T20:26:00.564516835Z","Action":"start","Package":"github.com/petomalina/xrpc/v2/pkg/server"}
+{"Time":"2023-04-12T20:26:00.569380179Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite"}
+{"Time":"2023-04-12T20:26:00.571545154Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Output":"=== RUN   TestServerSuite\n"}
+{"Time":"2023-04-12T20:26:00.571581453Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost"}
+{"Time":"2023-04-12T20:26:00.571608153Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Output":"=== RUN   TestServerSuite/TestDefinedPortNoHost\n"}
+{"Time":"2023-04-12T20:26:00.571625353Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Output":"--- PASS: TestServerSuite/TestDefinedPortNoHost (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.571638353Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestDefinedPortNoHost","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.571653653Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined"}
+{"Time":"2023-04-12T20:26:00.571666852Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Output":"=== RUN   TestServerSuite/TestNewDefined\n"}
+{"Time":"2023-04-12T20:26:00.571696252Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Output":"--- PASS: TestServerSuite/TestNewDefined (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.571709752Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewDefined","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.571730752Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom"}
+{"Time":"2023-04-12T20:26:00.571742652Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Output":"=== RUN   TestServerSuite/TestNewRandom\n"}
+{"Time":"2023-04-12T20:26:00.571762351Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Output":"--- PASS: TestServerSuite/TestNewRandom (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.571788651Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewRandom","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.571801551Z","Action":"run","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort"}
+{"Time":"2023-04-12T20:26:00.571814051Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Output":"=== RUN   TestServerSuite/TestNewWithHostNoPort\n"}
+{"Time":"2023-04-12T20:26:00.57188035Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Output":"--- PASS: TestServerSuite/TestNewWithHostNoPort (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.57191845Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite/TestNewWithHostNoPort","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.571959449Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Output":"--- PASS: TestServerSuite (0.00s)\n"}
+{"Time":"2023-04-12T20:26:00.571988149Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Test":"TestServerSuite","Elapsed":0}
+{"Time":"2023-04-12T20:26:00.572017248Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Output":"PASS\n"}
+{"Time":"2023-04-12T20:26:00.572621941Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Output":"\tgithub.com/petomalina/xrpc/v2/pkg/server\tcoverage: 53.8% of statements\n"}
+{"Time":"2023-04-12T20:26:00.57360443Z","Action":"output","Package":"github.com/petomalina/xrpc/v2/pkg/server","Output":"ok  \tgithub.com/petomalina/xrpc/v2/pkg/server\t0.009s\tcoverage: 53.8% of statements\n"}
+{"Time":"2023-04-12T20:26:00.574297922Z","Action":"pass","Package":"github.com/petomalina/xrpc/v2/pkg/server","Elapsed":0.01}

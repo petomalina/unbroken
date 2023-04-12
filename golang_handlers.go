@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"mime/multipart"
+	"strconv"
 	"strings"
 
 	"github.com/gin-gonic/gin"
@@ -58,7 +59,51 @@ func parseGoTestFile(file *multipart.FileHeader) error {
 		}
 
 		if goTestLine.Action == "pass" || goTestLine.Action == "fail" {
-			log.Info("gotestline", zap.Any("line", goTestLine))
+			// skip empty tests, as these outputs sometimes happen due to framework configuration
+			if goTestLine.Test == "" {
+				continue
+			}
+
+			// skip suites as they are not tests
+			if strings.HasSuffix(goTestLine.Test, "Suite") {
+				continue
+			}
+
+			log.Info("test results",
+				zap.String("package", goTestLine.Package),
+				zap.String("test", goTestLine.Test),
+				zap.String("status", goTestLine.Action),
+			)
+		}
+
+		if goTestLine.Action == "output" {
+			// only lines starting with ok seem to be the coverage results
+			if !strings.HasPrefix(goTestLine.Output, "ok") || !strings.Contains(goTestLine.Output, "coverage:") {
+				continue
+			}
+
+			coverageSplit := strings.Split(goTestLine.Output, "coverage: ")
+			if len(coverageSplit) != 2 {
+				log.Error("error parsing coverage", zap.Any("line", goTestLine.Output))
+				continue
+			}
+
+			percentSplit := strings.Split(coverageSplit[1], "%")
+			if len(percentSplit) != 2 {
+				log.Error("error parsing coverage", zap.Any("line", goTestLine.Output))
+				continue
+			}
+
+			coverage, err := strconv.ParseFloat(percentSplit[0], 64)
+			if err != nil {
+				log.Error("error parsing coverage", zap.Error(err))
+				continue
+			}
+
+			log.Info("coverage results",
+				zap.String("package", goTestLine.Package),
+				zap.Float64("coverage", coverage),
+			)
 		}
 	}
 
